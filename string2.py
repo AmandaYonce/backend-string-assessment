@@ -60,10 +60,26 @@ def not_bad(s):
 # Given 2 strings, a and b, return a string of the form:
 #   a-front + b-front + a-back + b-back
 
+import math
 
 def front_back(a, b):
-    
-    return
+    if len(a)%2==0:
+        amiddle=math.floor(len(a)/2)
+        afront=a[0:amiddle]
+        aback=a[amiddle::]
+    else:
+        amiddle=math.floor(len(a)/2)
+        afront=a[0:amiddle+1]
+        aback=a[amiddle+1::]
+    if len(b)%2==0:
+        bmiddle=math.floor(len(b)/2)
+        bfront=b[0:bmiddle]
+        bback=b[bmiddle::]
+    else: 
+        bmiddle=math.floor(len(b)/2)
+        bfront=b[0:bmiddle+1]
+        bback=b[bmiddle+1::]
+    return afront+bfront+aback+bback
 
 
 # Provided simple test() function used in main() to print
