@@ -23,14 +23,7 @@ __author__ = "amanda yonce"
 
 
 def verbing(s):
-    if len(s)<3:
-        output=s
-    else:
-        if s[-3::]=='ing':
-            output=s+"ly"
-        else:
-            output=s+'ing'
-    return output
+    return
 
 
 # E. not_bad
@@ -43,12 +36,7 @@ def verbing(s):
 
 
 def not_bad(s):
-    output=s
-    firstNot=s.find("not")
-    firstBad=s.find("bad")+3
-    if firstNot<firstBad:
-        output=s[:firstNot]+"good"+s[firstBad::]
-    return output
+    return
 
 
 # F. front_back
@@ -63,23 +51,7 @@ def not_bad(s):
 import math
 
 def front_back(a, b):
-    if len(a)%2==0:
-        amiddle=math.floor(len(a)/2)
-        afront=a[0:amiddle]
-        aback=a[amiddle::]
-    else:
-        amiddle=math.floor(len(a)/2)
-        afront=a[0:amiddle+1]
-        aback=a[amiddle+1::]
-    if len(b)%2==0:
-        bmiddle=math.floor(len(b)/2)
-        bfront=b[0:bmiddle]
-        bback=b[bmiddle::]
-    else: 
-        bmiddle=math.floor(len(b)/2)
-        bfront=b[0:bmiddle+1]
-        bback=b[bmiddle+1::]
-    return afront+bfront+aback+bback
+    return
 
 
 # Provided simple test() function used in main() to print
